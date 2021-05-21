@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="CSS/footer.css">
 </head>
 <body>
-    <header>
+
+    <!-- Inicio Menú Horizontal -->
+    <header class="Horizontal">
        <div class="container">
            <div class="row-1">
                 <p><i class="fas fa-phone-alt"></i>Call Us Today! 1.555.555.555 | <i class="far fa-envelope"></i> info@yourdomain.com</p>
@@ -66,6 +68,47 @@
         
     </header>
 
+    <!-- Fin Menú Horizontal -->
+
+    <!-- Inicio Menú Responsive -->
+
+    <header class="Responsive">
+        <div class="row1">
+           <p>Call Us Today! 1.555.555.555 | info@yourdomain.com</p>
+        </div>
+        <div class="row2">
+            <span class="nav-bar" id="btnMenu"> <i class=" fas fa-bars"></i></span>
+            <div class="logo">
+                <a href=""><img src="img/Logo.png" alt="Logo"></a>
+            </div>
+
+        </div>
+        <nav class="main-nav">
+          <ul class="menu" id="menu">
+              <li class="menu__item"><a href="" class="menu__link">Inicio</a></li>
+              <li class="menu__item container-submenu" >
+                  <a href="" class="menu__link submenu-btn">Mi Colegio <i class="fas fa-chevron-down"></i> </a>
+                  <ul class="submenu"> 
+                    <li class="menu__item"><a href="" class="menu__link">Misión</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Visión</a></li>
+                  </ul>
+                </li>
+              <li class="menu__item container-submenu">
+                  <a href="" class="menu__link submenu-btn">FESNI IETDH <i class="fas fa-chevron-down"></i></a>
+                  <ul class="submenu"> 
+                    <li class="menu__item"><a href="" class="menu__link">Acerca de nosotros</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Programas Académicos</a></li>
+                  </ul>
+                </li>
+              <li class="menu__item"><a href="" class="menu__link">Gobierno Escolar</a></li>
+              <li class="menu__item"><a href="" class="menu__link">Contáctenos</a></li>
+
+          </ul>
+        </nav>
+        <script src="menu.js"></script>
+
+    </header>
+
     <main>
         <section class="container">
             <div class="filtro">
@@ -80,7 +123,7 @@
                     <div class="col">
                         <div class="parrafo">
                             <h4>Oferta académica</h4>
-                            <p>Básica primaria, secundaria y técnicas laborales.</p>
+                            <p>Preescolar, Básica primaria, Básica secundaria y Media Académica.</p>
                         </div>
                         <div class="icono">
                             <i class="fas fa-graduation-cap"></i>
