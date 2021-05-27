@@ -1,14 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+
 body,main{
     margin: 0px;
     padding: 0px;
 }
 
 /* Inicio Banner */
-main{
-    display: flex;
-    flex-direction: column;
-}
-
 main .container{
     width: 100%;
     height: 90vh;
@@ -20,7 +18,6 @@ main .container{
     transition: all 1s ease-in-out;
     background-image: url("../img/banner-1.jpg");
     animation: banner 28s infinite linear;
-
 }
 
 main .container .filtro{
@@ -49,21 +46,17 @@ main .container .row .col{
 }
 
 main .container .row .col h2{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
     font-size: 2.1rem ;
-    font-weight: 700;
     margin-bottom: 0px;
-  
 }
 
 main .container .row .col p{
-   color: #ffffff;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 1em;
-  
+   color: #fff;
+   font-size: 1.1rem;
+   font-family: 'KoHo', sans-serif;
 }
-
 
 @keyframes banner{
     0%{
@@ -110,7 +103,7 @@ main .container .row-2{
 }
 
 main .container .row-2 .col{
-    width: 27%;
+    width: 25%;
     height: 100%;
     background-color: rgba(0, 53, 128,0.7);
     margin: 1px;
@@ -123,19 +116,19 @@ main .container .row-2 .col .parrafo{
     width: 85%; 
     height: 100%;
     margin-left: 30px;
- 
 }
 
 main .container .row-2 .col .parrafo h4{
+    font-size: 1.1rem;
     color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin-bottom: 0px;
 }
 
 main .container .row-2 .col .parrafo p{
     color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.9em;
+    font-family: 'KoHo', sans-serif;
+    margin-top: 5px;
 }
 
 main .container .row-2 .col .icono{
@@ -149,6 +142,125 @@ main .container .row-2 .col .icono{
 main .container .row-2 .col .icono i{
     color: rgb(200, 32, 38);
     font-size: 1.5rem;
+    margin-right: 30px;
  }
  
- /* Fin Banner */
+
+  @media(max-width:768px){
+       main .container{
+           height: 70vh;
+       }
+
+       main .container .row{
+        height: 70%;
+    }
+
+
+    main .container .row .col{
+        width: 35%;
+        height: 35vh;
+        margin-top: 5%;
+    }
+
+    main .container .row .col h2{
+        font-size: 1.5rem ;
+    }
+
+    main .container .row-2 .col .parrafo p{
+        color: #ffffff;
+        font-family: 'KoHo', sans-serif;
+    }
+
+    main .container .row .col p{
+        font-size: 0.9em;;
+     }
+
+     main .container .row-2{
+        height: 30%;
+    }
+    
+    main .container .row-2 .col{
+        width: 32%;
+    }
+    
+    main .container .row-2 .col .parrafo h4{
+        font-size: 1rem;
+    }
+    
+    main .container .row-2 .col .parrafo p{
+       font-size: 0.9rem;
+    }
+    
+    main .container .row-2 .col .icono i{
+        font-size: 1.4rem;
+        margin-right: 10px;
+     } 
+       
+    }
+
+
+    @media(max-width:480px){
+        main .container{
+            height: 40vh;
+        }
+
+        main .container .filtro{
+         flex-direction: row;
+        }
+        
+
+        main .container .row{
+            width: 50%;
+            height: 100%;
+        }
+
+        main .container .row .col{
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+        }
+
+        main .container .row .col h2{
+            font-size: 1.3rem ;
+            text-align: center;
+        }
+
+        main .container .row-2{
+            width: 50%;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        main .container .row-2 .col{
+            width: 100%;
+            height: 13vh;
+            background-color: rgba(0, 53, 128,0.4);
+        }
+
+        main .container .row .col h2{
+            display: none;
+             }
+
+        main .container .row .col p{
+        display: none;
+         }
+
+    
+        main .container .row-2 .col .parrafo h4{
+            font-size: 0.8rem;
+            margin-top: 8px;
+        }
+
+        main .container .row-2 .col .parrafo p{
+            font-size: 0.8rem;
+            margin-top: 0px;
+        }
+        
+
+        main .container .row-2 .col .icono i{
+            font-size: 1.3rem;
+            margin-right: 10px;
+         }
+    }
+
+    /* Fin Banner */

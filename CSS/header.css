@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
+/* Inicio menu horizontal*/
 
 body,header{
     margin: 0px;
@@ -9,12 +10,12 @@ body,header{
 
 header .container{
     width: 100%;
-    height: 25vh;
+    height: 22vh;
 }
 
 header .container .row-1{
     width: 100%;
-    height: 7vh;
+    height: 6vh;
     background-color: rgb(0, 53, 128);
     display: flex;
     align-items: center;
@@ -24,12 +25,14 @@ header .container .row-1{
 header .container .row-1 p i {
    color: rgb(200, 32, 38);
    margin: 0px 5px;
+   font-weight: 700;
 }
 
 header .container .row-1 p{
     margin-left: 80px;
-    color: #ffffff;
-    font-family: 'Open Sans Condensed', sans-serif;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.8rem;
 }
 
 header .container .row-1 ul{
@@ -74,111 +77,106 @@ header .container .row-1 ul li .twitter:hover{
 
 header .container .row-2{
     width: 100%;
-    height: 18vh;
-    background-color: rgb(247, 247, 247)
-    
-
-}
-
-header .container .row-2 .filter{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    height: 16vh;
     display: flex;
-
+    background-color: #FFF;
+    border-top: 2px solid rgb(200, 32, 38);
 }
 
-header .container .row-2 .filter .logo{
-    width: 20%;
+header .container .row-2 .logo{
+    width: 17%;
     height: 100%;
     display: flex;
     align-items: center;
+    margin-left: 120px;
 }
 
-header .container .row-2 .filter .logo a{
+header .container .row-2 .logo a{
    text-align: center;
 }
 
-header .container .row-2 .filter  img{
-   width: 90%;
+header .container .row-2 img{
+   width: 80%;
 }
 
-header .container .row-2 .filter nav{
-    width: 100%;
+header .container .row-2 nav{
+    width: 83%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-header .container .row-2 .filter nav  ul{
-    float: left;
+header .container .row-2 nav ul{
     padding: 0px;
+    margin-left: 50px;  
 }
 
 
-header .container .row-2 .filter nav  ul  li{
+header .container .row-2 nav ul li{
    float: left;
    list-style: none;
    position: relative;
 }
 
-header .container .row-2 .filter nav > ul > li:nth-child(1) a{
+header .container .row-2 nav > ul > li:nth-child(1) a{
   color: rgb(200, 32, 38);
 }
 
-header .container .row-2 .filter nav  ul li a{
+header .container .row-2 nav ul li a{
     display: block;
     text-decoration: none;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
     color: rgb(0, 53, 128);
-    font-weight: 500;
-    line-height: 17vh;
-    padding: 0 20px;
+    font-weight: 700;
+    line-height: 8vh;
+    padding: 0px 20px;
     transition: all 0.3s;
 }
 
 
-header .container .row-2 .filter nav  ul li a:hover{
+header .container .row-2 nav  ul li a:hover{
     color: rgb(200, 32, 38);
 }
 
-header .container .row-2 .filter nav ul li a svg{
+header .container .row-2 nav ul li a svg{
    width: 12px;
    height: 12px;
 }
 
-header .container .row-2 .filter nav  ul li ul{
+header .container .row-2 nav ul li ul{
     display: none;
     position: absolute;
     background-color: rgb(0, 53, 128);
 }
 
-header .container .row-2 .filter nav  ul li ul li{
+header .container .row-2 nav ul li ul li{
   width: 100%;
 }
 
- 
-header .container .row-2 .filter nav  ul li:hover ul{
+
+header .container .row-2 nav ul li:hover ul{
    display: block;
-   border-top: 2px solid rgb(200, 32, 38);;
+   border-top: 2px solid rgb(200, 32, 38);
 }
- 
-header .container .row-2 .filter nav  ul li ul li a{
-    padding: 1rem 2rem;
+
+header .container .row-2 nav ul li ul li a{
+    padding: 0.9rem 2rem;
     line-height: unset;
     white-space: nowrap;
     color: rgb(216, 206, 206);
 }
- 
-@media(max-width: 2000px){
+
+@media(max-width: 1920px){
     .Responsive{
         display: none;
     }
 }
-/* Iinicio Menu responsive */
+
+/* Fin menu horizontal*/
+
+
+/* Iinicio menu responsive */
 
 @media(max-width: 768px){
     .Horizontal{
@@ -196,12 +194,13 @@ header .container .row-2 .filter nav  ul li ul li a{
         justify-content: center;
         align-items: center;
         background-color: rgb(0, 53, 128);
-    } 
+    }
 
     .Responsive .row1 p {
-        color: #ffffff;
-        font-family: 'Open Sans Condensed', sans-serif;
-    } 
+        color: #fff;
+        font-family: 'Roboto Slab', serif;
+        font-size: 0.9rem;
+    }
 
     .Responsive .row2 {
         width: 100%;
@@ -209,15 +208,15 @@ header .container .row-2 .filter nav  ul li ul li a{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color:rgba(0, 0, 0, 0.1);
-      
+        background-color: #FFF;
+
     }
-    
+
     .Responsive .row2 .nav-bar{
       font-size: 1.8em;
       margin-left: 20px;
       cursor: pointer;
-     } 
+     }
 
     .Responsive .row2 .logo{
         width: 20%;
@@ -226,78 +225,58 @@ header .container .row-2 .filter nav  ul li ul li a{
         justify-content: center;
         align-items: center;
         margin-right: 10px;
-     } 
+     }
 
     .Responsive .row2 .logo img {
        width: 90%;
-    } 
+    }
 
     .menu, .submenu{
         list-style: none;
-        padding: 0;
-        margin: 0;
+        padding: 0px;
+        margin: 0px;
     }
 
     .menu{
-        background: #555;
+        background: rgba(0, 53, 128,0.9);
         width: 100%;
         margin-left: -100%;
+        transition: all 0.5s;
+        position: absolute;
+        z-index: 100;
+    }
+
+    .menu > li >.menu__link{
+        letter-spacing: 1px;
     }
 
     .menu__link{
         display: block;
-        padding: 20px;
-        color: white;
+        padding: 10px;
+        color: #fff;
         text-decoration: none;
         font-size: 1.2em;
-    }
-
-    .submenu{
-        height: 0;
-        overflow: hidden;
-        transition: all 0.3s;
+        font-family: 'Roboto Slab', serif;
     }
 
     .submenu .menu__link{
-        background: #333;
         padding-left: 50px;
     }
 
-   
-
-
-
-
-    
-
-   
-
-
-
-       
-    
-
-    
-   
-    
-
-
-
-
-
-
-   
-
-
-
-
-
-
+    .mostrar{
+        margin-left: 0;
+    }
 
 }
 
+@media(max-width: 480px){
+    .Responsive .row2 .logo{
+        width: 32%;
+     }
 
+}
 
+/* Fin menu responsive */
 
 
 
