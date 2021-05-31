@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 body,main{
     margin: 0px;
@@ -23,7 +25,7 @@ main .container{
 main .container .filtro{
     width: 100%;
     height: 100%;
-    background-color: rgba(0,22,40,.5);
+    background-color: rgba(0,22,40,.6);
     display: flex;
     flex-direction: column;
 }
@@ -53,9 +55,10 @@ main .container .row .col h2{
 }
 
 main .container .row .col p{
-   color: #fff;
+   color: #ffff;
    font-size: 1.1rem;
-   font-family: 'KoHo', sans-serif;
+   font-family: 'KoHo', sans-serif; 
+   text-align: justify;
 }
 
 @keyframes banner{
@@ -120,13 +123,13 @@ main .container .row-2 .col .parrafo{
 
 main .container .row-2 .col .parrafo h4{
     font-size: 1.1rem;
-    color: #ffffff;
+    color: #fff;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 0px;
 }
 
 main .container .row-2 .col .parrafo p{
-    color: #ffffff;
+    color: #fff;
     font-family: 'KoHo', sans-serif;
     margin-top: 5px;
 }
@@ -143,7 +146,7 @@ main .container .row-2 .col .icono i{
     color: rgb(200, 32, 38);
     font-size: 1.5rem;
     margin-right: 30px;
- }
+}
  
 
   @media(max-width:768px){
@@ -264,3 +267,433 @@ main .container .row-2 .col .icono i{
     }
 
     /* Fin Banner */
+
+    /* Inicio sección-2*/
+
+    main .container-2{
+     width: 100%;
+     height: 55vh;
+     display: flex;
+     background-color: #fff;
+    }
+
+    main .container-2 .row-1{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 100px 0px 80px;
+    }
+
+
+    main .container-2 .row-1 h3{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 9rem;
+        margin: 0px;
+        color: rgb(200, 32, 38);
+    }
+
+    main .container-2 h4{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+        margin: 0px;
+        color: rgb(24,97,154);
+    }
+
+
+    main .container-2 .row-2{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        margin-right: 60px;
+    }
+
+    main .container-2 .row-2 p{
+        font-family: 'KoHo', sans-serif;
+        text-align: justify;
+        color: rgb(3, 3, 3);
+        font-weight: 500;
+    }
+
+     main .container-2 .row-2 .linea{
+        border-bottom: 4px solid rgb(15,107,180);
+        width: 20%;
+        margin-top: 20px;
+      }
+
+     @media(max-width:768px){
+        main .container-2{
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        main .container-2 .row-1{
+            width: 100%;
+            margin: 0px;
+        }
+
+        main .container-2 .row-2{
+            width: 100%;
+            justify-content: start;
+            margin-top: -20px;
+            align-items: center;
+        }
+
+        main .container-2 .row-2 p{
+            padding: 0px 50px;
+         }
+     }
+
+     @media(max-width:480px){
+        main .container-2 .row-1 h3{
+            font-size: 6rem;
+        }
+    
+        main .container-2 h4{
+            font-size: 2.5rem;
+        }
+
+        main .container-2 .row-2 .linea{
+            margin-bottom: 20px;
+          }
+
+     }
+
+     /* Fin sección-2*/
+
+     /* Inicio sección-3*/
+     main .container-3{
+       width: 100%;
+       height: 90vh;
+       background-color: rgba(200, 200, 200,0.2);
+       display: flex;
+     }
+
+     main .container-3 .row{
+         width: 100%;
+         height: 100%;
+         margin: 0px 40px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     main .container-3 .row .col-1{
+         width: 100%;
+         height: 70%;
+         position: relative;
+         overflow: hidden;
+    }
+
+
+    main .container-3 .row .col-1 img{
+       width: 100%;
+       height: 100%;
+     }
+
+     main .container-3 .row .col-1 .texto{
+         background-color: rgba(0, 53, 128,0.6);
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         top:0;
+         left: -100%;
+         transition: all 300ms;
+         text-align: center;
+         cursor: pointer;
+         padding-top: 20px;
+       }
+
+       main .container-3 .row .col-1:hover .texto{
+           left: 0;
+      }
+
+      main .container-3 .row .col-1:hover .texto ul{
+        width: 100%;
+        height: 100%;
+        list-style-image: url("../img/proximo.png");
+   }
+
+    main .container-3 .row .col-1:hover .texto h3{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.8rem;
+        color: #fff;
+    }
+
+    main .container-3 .row .col-1:hover .texto ul li{
+        width: 40%;
+        color: #fff;
+        font-family: 'KoHo', sans-serif;
+        font-size: 1.4rem;
+        margin: auto;
+        text-align: left;
+        padding: 10px;
+      }
+
+      main .container-3 .row .col-2{
+          width: 100%;
+          height: 30%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+
+      main .container-3 .row .col-2 h4{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        margin-top: -10px;
+        color: rgb(24,97,154);
+    }
+
+
+    main .container-3 .row .col-2 .descarga{
+        width: 100%;
+        display: flex;
+    }
+
+    main .container-3 .row .col-2 .descarga .icono{
+        width: 100%;
+        text-align: center;
+    }
+
+    main .container-3 .row .col-2 .descarga .icono a{
+        text-decoration: none;
+        font-family: 'KoHo', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: rgb(3, 3, 3);
+    }
+
+    main .container-3 .row .col-2 .descarga .icono a i{
+        color: rgb(200, 32, 38);
+        font-size: 2rem;
+        margin-left: 10px;
+        border-radius: 100%;
+    }
+
+    @media(max-width:768px){
+        main .container-3{
+            height: 250vh;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          main .container-3 .row{
+            width: 80%;
+            margin: 0px;
+        }
+
+        main .container-3 .row .col-1 .texto{
+           padding-top: 70px;
+          }
+    }
+
+    @media(max-width:480px){
+        main .container-3{
+          height: 200vh;
+       }
+
+        main .container-3 .row{
+            width: 100%;
+       }
+
+        main .container-3 .row .col-1{
+          height: 70%;
+      }
+
+      main .container-3 .row .col-1 .texto{
+        padding-top: 10px;
+       }
+
+        main .container-3 .row .col-2{
+         height: 30%;
+      }
+
+      main .container-3 .row .col-2 .descarga{
+          flex-direction: column;
+      }
+
+      main .container-3 .row .col-2 h4{
+        margin-bottom: 10px;
+       }
+
+       main .container-3 .row .col-2 .descarga .icono{
+       margin-bottom: 10px;
+    }
+
+    }
+
+
+
+      /* Inicio sección-4*/
+
+      main .container-4 {
+          width: 100%;
+          height: 62vh;
+          display: flex;
+          background-color: rgba(24,97,154,0.1);
+        }
+
+      main .container-4 .row-1 {
+          width: 40%;
+          height: 100%;
+        }
+
+       main .container-4 .row-1 img{
+           width: 100%;
+           height: 100%;
+        }
+
+       main .container-4 .row-2 {
+        width: 60%;
+        height: 100%;
+        padding: 40px 90px 50px 100px;
+        box-sizing: border-box;
+       }
+
+       main .container-4 .row-2 h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        margin: 0px;
+        color: rgb(24,97,154);
+       }
+
+       main .container-4 .row-2 .linea {
+        border-bottom: 4px solid rgb(15,107,180);
+        width: 20%;
+        margin: 20px 0px 40px 0px;
+       }
+
+       main .container-4 .row-2 p {
+        font-family: 'KoHo', sans-serif;
+        text-align: justify;
+        color: rgb(3, 3, 3);
+        font-weight: 500;
+       }
+
+       main .container-4 .row-2 .Iconos {
+           width: 100%;
+           display: flex;
+           margin-top: 50px;
+       }
+
+       main .container-4 .row-2 .Iconos .col {
+           width: 100%;
+           display: flex;
+       }
+
+
+    main .container-4 .row-2 .Iconos .col .icono {
+        width: 18%;
+        border-radius: 50% ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid rgb(24,97,154);
+   }
+
+   main .container-4 .row-2 .Iconos .col .icono i {
+       font-size: 2.1rem;
+       color: rgb(24,97,154);
+       transition: all 0.3s;
+   }
+
+   main .container-4 .row-2 .Iconos .col h4 {
+    font-family: 'KoHo', sans-serif;
+    text-align: justify;
+    color: rgb(3, 3, 3);
+    font-weight: 700;
+    margin-left: 10px;
+  }
+
+
+  @media(max-width:768px){
+    main .container-4 {
+        height: 135vh;
+        flex-direction: column;
+      }
+
+      main .container-4 .row-1 {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      main .container-4 .row-1 img {
+          width: 50%;
+      }
+
+      main .container-4 .row-2 {
+        width: 100%;
+        text-align: center;
+       }
+
+       main .container-4 .row-2 .linea {
+           margin: 30px auto;
+       }
+  }
+
+  @media(max-width:480px){
+    main .container-4 {
+        height: 140vh;
+      }
+
+      main .container-4 .row-2 .Iconos .col .icono {
+        width: 50%;
+        box-sizing: border-box;
+     }
+
+     main .container-4 .row-2 .Iconos .col .icono i {
+       font-size: 1.5rem;
+     }
+
+      main .container-4 .row-2 .Iconos .col h4 {
+      font-size: 0.7rem;
+     }
+
+  }
+
+  /* Fin sección-4*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
