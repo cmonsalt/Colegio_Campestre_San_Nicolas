@@ -1,0 +1,105 @@
+footer{
+    margin: 0px;
+    padding: 0px;
+}
+
+footer .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(55,52,130);
+}
+
+footer .container .row-1{
+    width: 100%;
+    height: 92%;
+    background-color: seagreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container .row-1 .enlaces{
+   width: 100%;
+   height: 70%;
+   display: flex;
+   flex-direction:row;
+   background-color: red;
+}
+
+footer .container .row-1 .enlaces .col-1{
+   width: 15%;
+ }
+
+ footer .container .row-1 .enlaces img{
+     width: 70%;
+  }
+
+  footer .container .row-1 .enlaces .col-2{
+      width: 35%;
+      background-color: yellow;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  footer .container .row-1 .enlaces .col-2 h3{
+     color: #fff;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 1.5rem;
+   }
+
+   footer .container .row-1 .enlaces .col-2 ul{
+       background-color: turquoise;
+       padding: 15px 30px;
+   }
+
+   footer .container .row-1 .enlaces .col-2 ul li{
+       list-style: none;
+   }
+
+   footer .container .row-1 .enlaces .col-2> ul> li{
+    border-bottom: 1px solid #fff;
+}
+
+
+
+   footer .container .row-1 .enlaces .col-2 ul li a{
+    text-decoration: none;
+    font-family: 'KoHo', sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+   }
+
+   footer .container .row-1 .enlaces .col-2 ul li a svg{
+       width: 15px;
+   
+    }
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+

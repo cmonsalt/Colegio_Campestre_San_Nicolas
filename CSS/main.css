@@ -54,6 +54,7 @@ main .container .row .col h2{
     color: #fff;
     font-size: 2.1rem ;
     margin-bottom: 0px;
+    letter-spacing: 1px;
 }
 
 main .container .row .col p{
@@ -128,6 +129,7 @@ main .container .row-2 .col .parrafo h4{
     color: #fff;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 0px;
+    letter-spacing: 1px;
 }
 
 main .container .row-2 .col .parrafo p{
@@ -526,32 +528,62 @@ main .container .row-2 .col .icono i{
         margin-top: -20px;
       }
 
+      @media(max-width:768px){
+        main .container-3{
+            flex-direction: column;
+            height: 200vh;
+          }
 
-
-      
-
-
-
-
-
-
-
-
-
-  
+          main .container-3 .row{
+            margin: 0px;
+        }
    
-    
+        main .container-3 .row .col-1{
+            width: 70%;
+        }
+      }
 
-   
+      @media(max-width:480px){
+        main .container-3{
+            height: 160vh;
+          }
 
+        main .container-3 .row .col-1{
+            width: 90%;
+        }
 
-   
-   
- 
+        main .container-3 .row .col-1 .texto .icono{
+            width: 50px;
+            height: 50px;
+         }
 
-  
+         main .container-3 .row .col-1 .texto .icono i{
+            font-size: 1.5rem;
+       }
 
-  
+       main .container-3 .row .col-1 .texto h3{
+        font-size: 1.4rem;
+      }
+
+        main .container-3 .row .col-1 .texto p{
+         width: 90%;
+         font-size: 1rem;
+      }
+
+      main .container-3 .row .col-1 .texto .botones button i{
+        font-size: 1.1rem;
+     }
+
+     main .container-3 .row .col-1 .texto .botones button a{
+      font-size: 0.8rem;
+     }
+
+     main .container-3 .row .col-2 h4{
+        font-size: 1.5rem;;
+      }
+
+    }
+
 
       /* Inicio sección-4*/
 
