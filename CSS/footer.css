@@ -5,20 +5,19 @@ footer{
 
 footer .container{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(55,52,130);
 }
 
 footer .container .row-1{
     width: 100%;
     height: 92%;
-    background-color: seagreen;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(55,52,130);
 }
 
 footer .container .row-1 .enlaces{
@@ -26,58 +25,374 @@ footer .container .row-1 .enlaces{
    height: 70%;
    display: flex;
    flex-direction:row;
-   background-color: red;
 }
 
 footer .container .row-1 .enlaces .col-1{
-   width: 15%;
+   width: 40%;
+   height: 70%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 30px 60px 30px 100px;
  }
 
  footer .container .row-1 .enlaces img{
-     width: 70%;
+     width: 80%;
+     margin: 0 auto;
+  }
+
+  footer .container .row-1 .enlaces p{
+    width: 100%;
+    font-family: 'KoHo', sans-serif;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: justify;
   }
 
   footer .container .row-1 .enlaces .col-2{
-      width: 35%;
-      background-color: yellow;
+      width: 40%;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: left;
+      margin: 0px 40px;
     }
 
   footer .container .row-1 .enlaces .col-2 h3{
-     color: #fff;
-     font-family: 'Montserrat', sans-serif;
-     font-size: 1.5rem;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.4rem;
    }
 
-   footer .container .row-1 .enlaces .col-2 ul{
-       background-color: turquoise;
-       padding: 15px 30px;
+   footer .container .row-1 .enlaces .col-2 > ul{
+       width: 100%;
+       box-sizing: border-box;
+       padding-left: 0px;
    }
 
    footer .container .row-1 .enlaces .col-2 ul li{
        list-style: none;
+       padding: 6px 0px;
    }
 
-   footer .container .row-1 .enlaces .col-2> ul> li{
-    border-bottom: 1px solid #fff;
-}
 
+
+   footer .container .row-1 .enlaces .col-2 > ul> li{
+     border-bottom: 0.1rem solid rgb(184, 184, 184);
+     text-align: left;
+   }
 
 
    footer .container .row-1 .enlaces .col-2 ul li a{
     text-decoration: none;
     font-family: 'KoHo', sans-serif;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
+    text-align: left;
    }
+
 
    footer .container .row-1 .enlaces .col-2 ul li a svg{
        width: 15px;
-   
     }
+
+
+    footer .container .row-1 .enlaces .col-3{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin: 0px 40px;
+     }
+
+     footer .container .row-1 .enlaces .col-3 h3{
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4rem;
+     }
+
+     footer .container .row-1 .enlaces .col-3 ul{
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 0px;
+     }
+
+     footer .container .row-1 .enlaces .col-3 ul li{
+        list-style: none;
+        border-bottom: 0.1rem solid rgb(184, 184, 184);
+        padding: 6px 0px;
+     }
+
+     footer .container .row-1 .enlaces .col-3 ul li a{
+        text-decoration: none;
+        font-family: 'KoHo', sans-serif;
+        color: #fff;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        text-align: left;
+     }
+
+     footer .container .row-1 .enlaces .col-4{
+       width: 15%;
+       margin: 0px 140px 0px 40px;
+     }
+
+     footer .container .row-1 .enlaces .col-4 h3{
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4rem;
+      }
+
+      footer .container .row-1 .enlaces .col-4 a{
+        background-color: #fff;
+        text-decoration: none;
+      }
+
+      footer .container .row-1 .enlaces .col-4 a .icono{
+          background-color: #25D366;
+          width: 40%;
+          height: 14%;
+          border-radius: 100%;
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      footer .container .row-1 .enlaces .col-4 a .icono i{
+        font-size: 2.5rem;
+        color: #fff;
+      }
+
+      
+     footer .container .row-1 .direccion{
+         width: 100%;
+         height:30%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-top: -20px;
+     }
+
+
+     footer .container .row-1 .direccion p{
+        font-family: 'KoHo', sans-serif;
+        color: #fff;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    footer .container .row-1 .direccion p:nth-child(2){
+        margin-top: -10px;
+    }
+
+    footer .container .row-1 .direccion .linea{
+        border-bottom: 1px solid #fff;
+        width: 45%;
+        margin: 20px 0px; 
+    }
+
+    footer .container .row-1 .direccion .iconos{
+      width: 50%;
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    footer .container .row-1 .direccion .iconos .icono{
+       width: 10%;
+       height: 73%;
+       margin: 20px;
+       background-color: transparent;
+       border: 1px solid rgb(184, 184, 184);
+       border-radius: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       transition: all 0.3s;
+      }
+
+      footer .container .row-1 .direccion .iconos .icono:nth-child(1):hover{
+        background-color: #0071bc;
+        border: 1px solid #0071bc;;
+       }
+
+       footer .container .row-1 .direccion .iconos .icono:nth-child(2):hover{
+        background-color: #00acee;
+        border: 1px solid #00acee;
+       }
+
+       footer .container .row-1 .direccion .iconos .icono:nth-child(3):hover{
+        background-color: #FCAF45;
+        border: 1px solid #FCAF45;
+       }
+
+       footer .container .row-1 .direccion .iconos .icono:nth-child(4):hover{
+        background-color: #c4302b;
+        border: 1px solid #c4302b;
+       }
+
+      
+    footer .container .row-1 .direccion .iconos .icono a{
+        text-decoration: none;
+       }
+
+    footer .container .row-1 .direccion .iconos .icono a i{
+      color: #fff;
+      font-size: 2rem;
+     }
+
+     footer .container .row-2 {
+         width: 100%;
+         height: 8%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: rgb(41,38,129);
+    }
+
+       footer .container .row-2 p {
+        font-family: 'KoHo', sans-serif;
+        color: #fff;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+      }
+
+
+      @media(max-width: 768px){
+        footer .container{
+          height: 150vh;
+      }
+
+      footer .container .row-1 .enlaces .col-1{
+        margin: 30px 10px 30px 40px;
+      }
+
+      footer .container .row-1 .enlaces .col-2{
+        margin: 0px 30px;
+      }
+
+      footer .container .row-1 .enlaces .col-3{
+        margin: 0px 30px;
+      }
+
+      footer .container .row-1 .enlaces .col-4{
+        width: 27%;
+        margin: 0px 80px 0px 20px;
+      }
+
+      footer .container .row-1 .enlaces .col-4 a .icono{
+        height: 12%;
+    }
+
+    footer .container .row-1 .direccion .iconos .icono{
+      width: 20%;
+      height: 60%;
+     }
+
+    }
+
+    @media(max-width: 480px){
+      footer .container{
+        height: 320vh;
+    }
+    
+    footer .container .row-1{
+     height: 95%;
+    }
+    
+    footer .container .row-1 .enlaces{
+       flex-direction:column;
+       align-items: center;
+       height: 80%;
+    }
+
+    footer .container .row-1 .enlaces .col-1{
+      width: 60%;
+      height: 60%;
+      margin: 0px;
+      margin-top: 20px;
+    }
+
+    footer .container .row-1 .enlaces .col-2{
+      width: 80%;
+      height: 75%;
+      margin: 0px;
+      margin-bottom: 20px;
+    }
+
+    footer .container .row-1 .enlaces .col-3{
+      width: 80%;
+      height: 50%;
+      margin: 0px;
+      margin-bottom: 20px;
+    }
+
+    footer .container .row-1 .enlaces .col-4{
+      width: 80%;
+      height: 40%;
+      margin: 0px;
+    }
+
+    footer .container .row-1 .enlaces .col-4 h3{
+     text-align: center;
+    }
+
+
+    footer .container .row-1 .enlaces .col-4 a .icono{
+      width: 18%;
+      height: 30%;
+    }
+
+    footer .container .row-1 .direccion{
+      width: 80%;
+      height: 20%;
+      justify-content: center;
+      margin-top: -30px;
+   }
+
+   footer .container .row-1 .direccion p{
+    text-align: center;
+  }
+
+  footer .container .row-1 .direccion .iconos{
+    width: 80%;
+  }
+
+  footer .container .row-1 .direccion .iconos .icono{
+     width: 70%;
+     height: 45%;
+     margin: 10px;
+    }
+
+    footer .container .row-2{
+      height: 5%;
+     }
+
+     footer .container .row-2 p{
+      text-align: center;
+     }
+}
+
+
+  
+
+
+
+
+
+
+
+     
+
+
+
+
+ 
+ 
 
 
 
