@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
 footer{
     margin: 0px;
     padding: 0px;
@@ -314,14 +315,18 @@ footer .container .row-1 .enlaces .col-1{
       width: 60%;
       height: 60%;
       margin: 0px;
-      margin-top: 20px;
+      margin-top: 30px;
     }
+    footer .container .row-1 .enlaces img{
+      width: 70%;
+   }
 
     footer .container .row-1 .enlaces .col-2{
       width: 80%;
       height: 75%;
       margin: 0px;
       margin-bottom: 20px;
+      margin-top: -20px;
     }
 
     footer .container .row-1 .enlaces .col-3{

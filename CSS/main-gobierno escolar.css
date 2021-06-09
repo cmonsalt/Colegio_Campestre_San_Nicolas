@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap');
+
+main{
+    padding: 0px;
+    margin: 0px;
+}
+
+main .container{
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.9);
+}
+
+main .container .row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .row h2{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color:rgb(55,52,130);
+    font-size: 1.7rem;
+}
+
+main .container .row .col{
+ width: 92%;
+ height: 40%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 25px;
+}
+
+
+main .container .row .col .foto{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+
+main .container .row .col .foto img{
+    width:90%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+main .container .row .col:nth-child(3) .foto img{
+   width: 82%;
+   height: 66%;
+}
+
+
+ main .container .row .col .texto{
+    width: 100%;
+    height: 35%;
+    text-align: center;
+
+ }
+
+   main .container .row .col .texto h3{
+     color: rgb(55,52,130);
+     font-family: 'Raleway', sans-serif;
+   }
+
+   main .container .row .col .texto h4{
+    color: rgb(123, 122, 134);
+    font-family: 'KoHo', sans-serif;
+  }
+
+
+  @media(max-width: 768px){
+    main .container .row .col{
+         width: 100%;
+         height: 45%;
+         margin: 10px;
+       }
+       
+       
+       main .container .row .col .foto{
+           margin: 5px;
+       }
+       
+       
+       main .container .row .col .foto img{
+           width:90%;
+           height: 50%;
+       }
+
+       main .container .row .col:nth-child(3) .foto img{
+         width: 92%;
+         height: 51%;
+      }
+
+     main .container .row .col .texto{
+        height: 35%;
+     }
+     
+  }
+
+
+  @media(max-width: 480px){
+    main .container{
+        height: 450vh; 
+    }
+    
+    main .container .row{
+        justify-content: unset;
+    }
+    
+
+    main .container .row .col{
+     width: 100%;
+     height: 100%;
+     flex-direction: column;
+     justify-content: flex-start;
+     margin: 0px;
+    }
+    
+    
+    main .container .row .col .foto{
+        width: 80%;
+        height: 25%;
+        margin: 20px;
+    }
+    
+    
+    main .container .row .col .foto img{
+        width:60%;
+        height: 65%;
+    }
+    
+    main .container .row .col:nth-child(3) .foto img{
+       width: 60%;
+       height: 75%;
+    }
+
+    main .container .row .col .texto{
+     
+     }
+    
+  }
+
+
+
+
+
+
+
+
+

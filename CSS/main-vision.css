@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body,main{
+    margin: 0px;
+    padding: 0px;
+}
+
+main .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.9);
+}
+
+main .container .row{
+    width: 90%;
+    height: 90%;
+    display: flex;
+}
+
+main .container .row .col-1{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  }
+
+  main .container .row .col-1 h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-size: 900; 
+    color: rgb(200, 32, 38);
+    letter-spacing: 1px;
+ }
+
+ main .container .row .col-1 .linea-1{
+   width: 2.5%;
+   border-bottom: 4px solid rgb(24,97,154);
+   border-radius: 20%;
+   margin-top: -25px;
+   margin-bottom: 3px;
+   margin-left: 8px;
+ }
+ main .container .row .col-1 .linea-2{
+    width: 4.5%;
+    border-bottom: 4px solid rgb(24,97,154);
+    border-radius: 20%;
+    margin-bottom: 3px;
+  }
+
+  main .container .row .col-1 .linea-3{
+    width: 2%;
+    border-bottom: 4px solid rgb(24,97,154);
+    border-radius: 20%;
+    margin-bottom: 20px;
+    margin-left: 4px;
+  }
+
+  main .container .row .col-1 .parrafo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .container .row .col-1 .parrafo .parrafo-1 {
+    display: flex;
+  }
+
+  main .container .row .col-1 .parrafo .parrafo-1 span {
+    background-color: rgb(24,97,154);
+    width: 18%;
+    height: 40%;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-right: 5px;
+    font-family: 'KoHo', sans-serif;
+
+  }
+
+  main .container .row .col-1 .parrafo p{
+    font-family: 'KoHo', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: rgb(29, 29, 29);
+  }
+
+  main .container .row .col-1 .parrafo .parrafo-2{
+    margin-top: -20px;
+  }
+
+
+main .container .row .col-2{
+    width: 50%;
+    background-color: brown;
+    margin-left: 50px;
+  }
+
+  main .container .row .col-2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+  }
+
+  @media(max-width: 768px){
+    main .container{
+      height: 200vh;
+    }
+
+    main .container .row{
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .container .row .col-1{
+        width: 80%;
+        }
+
+        main .container .row .col-2{
+            width: 80%;
+            margin-left: 0px;
+          }
+  }
+
+  @media(max-width: 480px){
+    main .container{
+      height: 150vh;
+    }
+
+    main .container .row .col-1 .parrafo .parrafo-1 span {
+        width: 50%;
+        height: 30%;
+      }
+
+      main .container .row .col-1 .parrafo .parrafo-2{
+        margin-top: -25px;
+      }
+
+      main .container .row .col-1 .linea-1{
+        width: 3.5%;
+      }
+      main .container .row .col-1 .linea-2{
+         width: 6%;
+       }
+     
+       main .container .row .col-1 .linea-3{
+         width: 3%;
+       }
+
+  }
